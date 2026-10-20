@@ -10,14 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_worldholidays',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='World Holidays is a simple tool for getting the holidays of the world. It returns the holidays of the world for each day of the year.',
+    description='World Holidays lists public holidays and observances for any two-letter country code. It returns holiday dates, official names, and event types across the year.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com/marketplace/worldholidays?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/worldholidays?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
