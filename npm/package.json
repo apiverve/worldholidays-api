@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/worldholidays",
-  "version": "1.2.0",
-  "description": "World Holidays is a simple tool for getting the holidays of the world. It returns the holidays of the world for each day of the year.",
+  "version": "1.2.2",
+  "description": "World Holidays lists public holidays and observances for any two-letter country code. It returns holiday dates, official names, and event types across the year.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "world holidays", "world holidays api", "world holidays tool", "world holidays software", "world holidays service"
+    "world holidays api", "public holiday calendar", "get holidays by country", "national holidays by country code", "global holiday schedule"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/worldholidays-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/worldholidays?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/worldholidays?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
