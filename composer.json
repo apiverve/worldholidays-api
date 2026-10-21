@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/worldholidays",
+    "description": "World Holidays lists public holidays and observances for any two-letter country code. It returns holiday dates, official names, and event types across the year.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "worldholidays",
+        "world holidays api",
+        "public holiday calendar",
+        "get holidays by country",
+        "national holidays by country code",
+        "global holiday schedule"
+    ],
+    "homepage": "https://apiverve.com/marketplace/worldholidays?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/worldholidays",
+        "source": "https://github.com/apiverve/worldholidays-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Worldholidays\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Worldholidays\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
