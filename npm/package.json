@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/worldholidays",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "World Holidays lists public holidays and observances for any two-letter country code. It returns holiday dates, official names, and event types across the year.",
   "main": "index.js",
   "types": "index.d.ts",
