@@ -21,5 +21,23 @@ namespace APIVerve.API.WorldHolidays
         /// </summary>
         [JsonProperty("year")]
         public int? Year { get; set; }
+
+        /// <summary>
+        /// State or region code (e.g. BY, CA or US-CA) to include regional holidays
+        /// </summary>
+        [JsonProperty("region")]
+        public string Region { get; set; }
+
+        /// <summary>
+        /// Only return these holiday types, comma-separated: public, bank, school, optional, observance
+        /// </summary>
+        [JsonProperty("type")]
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Check a single date (YYYY-MM-DD); returns isHoliday and only the holidays on that day. Overrides year
+        /// </summary>
+        [JsonProperty("date")]
+        public string Date { get; set; }
     }
 }

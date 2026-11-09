@@ -58,6 +58,15 @@ namespace APIVerve.API.WorldHolidays
 
         [JsonProperty("type")]
         public TypeEnum? Type { get; set; }
+
+        [JsonProperty("dayOfWeek")]
+        public string DayOfWeek { get; set; }
+
+        [JsonProperty("englishName")]
+        public string EnglishName { get; set; }
+
+        [JsonProperty("substitute")]
+        public bool? Substitute { get; set; }
     }
 
     public partial class Premium

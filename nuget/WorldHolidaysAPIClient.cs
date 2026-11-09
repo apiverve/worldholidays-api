@@ -68,7 +68,10 @@ namespace APIVerve.API.WorldHolidays
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "country", new ValidationRule { Type = "string", Required = true, MinLength = 2, MaxLength = 2 } },
-            { "year", new ValidationRule { Type = "integer", Required = false, Min = 2000, Max = 2050 } }
+            { "year", new ValidationRule { Type = "integer", Required = false, Min = 2000, Max = 2050 } },
+            { "region", new ValidationRule { Type = "string", Required = false } },
+            { "type", new ValidationRule { Type = "string", Required = false } },
+            { "date", new ValidationRule { Type = "string", Required = false, Format = "date" } }
         };
 
         /// <summary>Format validation patterns</summary>
