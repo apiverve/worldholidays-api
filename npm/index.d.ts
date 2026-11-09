@@ -26,16 +26,19 @@ declare module '@apiverve/worldholidays' {
 
   interface WorldHolidaysData {
       country:  null | string;
-      year:     null | string;
+      year:     number | null;
       holidays: Holiday[];
   }
   
   interface Holiday {
-      date:  Date | null;
-      start: Date | null;
-      end:   Date | null;
-      name:  null | string;
-      type:  Type | null;
+      date:        Date | null;
+      start:       Date | null;
+      end:         Date | null;
+      name:        null | string;
+      type:        Type | null;
+      dayOfWeek:   null | string;
+      englishName: null | string;
+      substitute?: boolean | null;
   }
   
   enum Type {

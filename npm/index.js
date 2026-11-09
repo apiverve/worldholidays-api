@@ -30,7 +30,7 @@ class worldholidaysWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/worldholidays';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"country":{"type":"string","required":true,"minLength":2,"maxLength":2},"year":{"type":"integer","required":false,"min":2000,"max":2050,"default":2026}};
+        this.validationRules = {"country":{"type":"string","required":true,"minLength":2,"maxLength":2},"year":{"type":"integer","required":false,"min":2000,"max":2050,"default":2026},"region":{"type":"string","required":false},"type":{"type":"string","required":false},"date":{"type":"string","required":false,"format":"date"}};
     }
 
     /**
