@@ -15,7 +15,7 @@ use APIVerve\Worldholidays\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['country' => 'US', 'year' => 2026]);
+ * $response = $client->execute(['country' => 'US', 'year' => 2026, 'region' => 'CA', 'type' => 'public', 'date' => '2026-07-03']);
  * print_r($response);
  * ```
  *
@@ -35,7 +35,10 @@ class Client
      */
     private const VALIDATION_RULES = [
         'country' => ['type' => 'string', 'required' => true, 'minLength' => 2, 'maxLength' => 2],
-        'year' => ['type' => 'integer', 'required' => false, 'min' => 2000, 'max' => 2050]
+        'year' => ['type' => 'integer', 'required' => false, 'min' => 2000, 'max' => 2050],
+        'region' => ['type' => 'string', 'required' => false],
+        'type' => ['type' => 'string', 'required' => false],
+        'date' => ['type' => 'string', 'required' => false, 'format' => 'date']
     ];
 
     /**
